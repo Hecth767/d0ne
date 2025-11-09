@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Kallpa Digital — Desarrollo Web & Producto</title>
+  <meta name="description" content="Diseñamos y construimos sitios web y productos digitales con foco en performance, SEO y conversión.">
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- OG -->
+  <meta property="og:title" content="Kallpa Digital — Desarrollo Web & Producto">
+  <meta property="og:description" content="Sitios veloces, diseño moderno y asesoramiento integral para tu negocio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:url" content="https://hecth767.github.io/d0ne/" />
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Barra de accesibilidad: saltar a contenido -->
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Principal">
+      <a href="#inicio" class="brand" aria-label="Kallpa Digital — inicio">
+        <!-- Logo SVG liviano -->
+        <svg class="logo" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="100%" stop-color="#6366f1"/>
+            </linearGradient>
+          </defs>
+          <rect width="24" height="24" rx="6" fill="url(#g)"/>
+          <path d="M7 16l3-8 3 8 2-5h2" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Kallpa<span class="accent">Digital</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto" class="btn btn--sm">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero__content">
+        <h1 class="reveal">Sitios web rápidos.<br><span class="grad">Diseño que convierte.</span></h1>
+        <p class="lead reveal">
+          Construimos experiencias digitales limpias, accesibles y medibles. Desde landing pages hasta productos completos:
+          performance, SEO técnico y analítica de punta.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#contacto" class="btn btn--lg">Empezar proyecto</a>
+          <a href="#proyectos" class="btn btn--ghost">Ver trabajos</a>
+        </div>
+
+        <ul class="trust reveal" aria-label="Indicadores de confianza">
+          <li>⚡ Páginas <strong>ultra rápidas</strong></li>
+          <li>🔍 <strong>SEO técnico</strong> desde el día 1</li>
+          <li>📈 <strong>Métricas</strong> y CRO</li>
+        </ul>
+      </div>
+
+      <figure class="hero__media reveal">
+        <img
+          src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1600&auto=format&fit=crop"
+          alt="Equipo colaborando frente a laptops en un entorno de trabajo moderno"
+          width="1200" height="900" loading="eager" />
+        <figcaption class="visually-hidden">Equipo de trabajo diseñando un producto digital.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="section container">
+      <header class="section__head">
+        <h2 class="reveal">Quiénes somos</h2>
+        <p class="reveal">Somos un estudio boutique con base en Oruro, Bolivia. Combinamos estrategia, diseño y código para impulsar negocios en la web.</p>
+      </header>
+
+      <div class="grid cards">
+        <article class="card reveal">
+          <h3>Estrategia & Producto</h3>
+          <p>Alineamos objetivos de negocio con métricas de impacto. Roadmaps claros, iteraciones cortas y foco en conversión.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Diseño de Interfaz</h3>
+          <p>UI/UX minimalista, accesible y mobile-first. Componentes escalables y consistentes con tu marca.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Desarrollo Web</h3>
+          <p>Stacks modernos (HTML/CSS/JS). Buenas prácticas, performance, SEO y despliegues continuos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section container">
+      <header class="section__head">
+        <h2 class="reveal">Servicios</h2>
+        <p class="reveal">Paquetes claros, sin humo. Elegí lo que necesitás.</p>
+      </header>
+
+      <div class="pricing">
+        <article class="price-card reveal">
+          <div class="price-card__head">
+            <h3>Landing Pro</h3>
+            <p>Ideal para campañas y validación de ofertas.</p>
+            <strong class="price">desde $299</strong>
+          </div>
+          <ul>
+            <li>1 sección larga + sección FAQ</li>
+            <li>Copy orientado a conversión</li>
+            <li>Integración con analytics</li>
+            <li>Entrega en 5–7 días</li>
+          </ul>
+          <a href="#contacto" class="btn btn--block">Solicitar</a>
+        </article>
+
+        <article class="price-card featured reveal" aria-label="Plan recomendado">
+          <div class="price-card__head">
+            <h3>Sitio Business</h3>
+            <p>Tu presencia sólida en la web.</p>
+            <strong class="price">desde $690</strong>
+          </div>
+          <ul>
+            <li>Hasta 5 páginas</li>
+            <li>Diseño a medida</li>
+            <li>SEO técnico inicial</li>
+            <li>Soporte 30 días</li>
+          </ul>
+          <a href="#contacto" class="btn btn--block">Cotizar</a>
+        </article>
+
+        <article class="price-card reveal">
+          <div class="price-card__head">
+            <h3>Producto Starter</h3>
+            <p>MVP funcional para validar mercado.</p>
+            <strong class="price">a medida</strong>
+          </div>
+          <ul>
+            <li>Arquitectura y roadmap</li>
+            <li>Componentes reutilizables</li>
+            <li>Pruebas básicas de usabilidad</li>
+            <li>Setup de métricas</li>
+          </ul>
+          <a href="#contacto" class="btn btn--block">Agendar llamada</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section container">
+      <header class="section__head">
+        <h2 class="reveal">Proyectos</h2>
+        <p class="reveal">Algunos trabajos recientes y resultados medibles.</p>
+      </header>
+
+      <div class="grid portfolio">
+        <article class="work reveal">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+               alt="Dashboard de analítica con gráficos" width="800" height="600" loading="lazy" />
+          <div class="work__body">
+            <h3>Analytics Hub</h3>
+            <p>Panel de métricas para e-commerce. +38% tasa de conversión.</p>
+          </div>
+        </article>
+
+        <article class="work reveal">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop"
+               alt="Código en editor y terminal" width="800" height="600" loading="lazy" />
+          <div class="work__body">
+            <h3>Landing SaaS</h3>
+            <p>Mensaje claro, performance 100/100 en Lighthouse.</p>
+          </div>
+        </article>
+
+        <article class="work reveal">
+          <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200&auto=format&fit=crop"
+               alt="Diseño de interfaz en dispositivo móvil" width="800" height="600" loading="lazy" />
+          <div class="work__body">
+            <h3>Mobile UI Kit</h3>
+            <p>Sistema de diseño escalable para app financiera.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section container">
+      <header class="section__head">
+        <h2 class="reveal">Contacto</h2>
+        <p class="reveal">Contanos sobre tu proyecto y te respondemos en 24h.</p>
+      </header>
+
+      <form class="contact reveal" onsubmit="return handleContact(event)" aria-describedby="contact-help">
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Contanos brevemente tu idea" required></textarea>
+        </div>
+        <p id="contact-help" class="fine">También podés escribirnos a <a href="mailto:hola@kallpadigital.studio">hola@kallpadigital.studio</a> o WhatsApp <a href="https://wa.me/59170000000">+591 70000000</a>.</p>
+        <button class="btn btn--lg" type="submit">Enviar</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <strong>Kallpa Digital</strong>
+        <p class="fine">Oruro, Bolivia · L-V 9:00–18:00</p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="#top">Arriba</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="mailto:hola@kallpadigital.studio">Contacto</a></li>
+      </ul>
+      <p class="fine">© <span id="year"></span> Kallpa Digital — Hecho con café y buen código.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
