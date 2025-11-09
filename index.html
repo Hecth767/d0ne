@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>D0NE Digital — Software, Web & Producto</title>
+  <meta name="description" content="D0NE Digital: Estudio de software y producto digital. Webs veloces, APIs escalables y UX que convierte.">
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- OG -->
+  <meta property="og:title" content="D0NE Digital — Software, Web & Producto">
+  <meta property="og:description" content="D0NE Digital desarrolla software, sitios web rápidos, SEO técnico y analítica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:url" content="https://hecth767.github.io/d0ne/" />
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fondo global (imagen computadora, fuera de las secciones) -->
+  <div class="bg-computer" aria-hidden="true"></div>
+  <div class="bg-overlay" aria-hidden="true"></div>
+
+  <!-- Barra de accesibilidad: saltar a contenido -->
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Principal">
+      <a href="#inicio" class="brand" aria-label="D0NE Digital — inicio">
+        <!-- Logo SVG -->
+        <svg class="logo" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="100%" stop-color="#6366f1"/>
+            </linearGradient>
+          </defs>
+          <rect width="24" height="24" rx="6" fill="url(#g)"/>
+          <path d="M7 16l3-8 3 8 2-5h2" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>D0NE Digital</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a class="btn btn--ghost btn--sm" href="#nosotros">Nosotros</a></li>
+        <li><a class="btn btn--ghost btn--sm" href="#servicios">Servicios</a></li>
+        <li><a class="btn btn--ghost btn--sm" href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto" class="btn btn--sm btn--neon">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero__content">
+        <h1 class="reveal">Software a tu medida.<br><span class="grad">Rendimiento real, resultados medibles.</span></h1>
+        <p class="lead reveal">
+          En D0NE Digital construimos productos: sitios web, APIs y dashboards.
+          Priorizamos performance, accesibilidad, SEO técnico y analítica para crecer con datos.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#contacto" class="btn btn--lg btn--neon">Iniciar proyecto</a>
+          <a href="#proyectos" class="btn btn--lg btn--ghost btn--tilt">Ver casos</a>
+          <a href="#servicios" class="btn btn--lg btn--pulse">Servicios</a>
+        </div>
+
+        <ul class="trust reveal" aria-label="Indicadores de confianza">
+          <li>⚡ <strong>Webs ultra rápidas</strong></li>
+          <li>🧩 <strong>APIs escalables</strong></li>
+          <li>🔍 <strong>SEO técnico</strong></li>
+          <li>📈 <strong>Analítica & CRO</strong></li>
+        </ul>
+      </div>
+
+      <figure class="hero__media reveal">
+        <!-- Nueva imagen tipo “silueta meditando al atardecer” -->
+        <img
+          src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1600&auto=format&fit=crop"
+          alt="Silueta meditando al atardecer, calma y enfoque"
+          width="1200" height="900" loading="eager" />
+        <figcaption class="visually-hidden">Silueta en meditación al atardecer.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="section container">
+      <header class="section__head">
+        <h2 class="reveal">Quiénes somos</h2>
+        <p class="reveal">Estudio de software con base en Bolivia. Estrategia, diseño y código para productos que crecen.</p>
+      </header>
+
+      <div class="grid cards">
+        <article class="card reveal">
+          <h3>Estrategia & Producto</h3>
+          <p>Definimos objetivos, OKRs y roadmap. Iteramos con datos, no con intuición.</p>
+          <a href="#contacto" class="btn btn--block btn--tilt">Agendar consultoría</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>UX/UI & Frontend</h3>
+          <p>Interfaces accesibles, coherentes y pensadas para convertir.</p>
+          <a href="#proyectos" class="btn btn--block btn--neon">Ver interfaces</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Backend & APIs</h3>
+          <p>Arquitecturas limpias, endpoints seguros y observabilidad.</p>
+          <a href="#servicios" class="btn btn--block btn--pulse">Explorar stack</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section container">
+      <header class="section__head">
+        <h2 class="reveal">Servicios</h2>
+        <p class="reveal">Paquetes claros para cada etapa de tu producto.</p>
+      </header>
+
+      <div class="pricing">
+        <article class="price-card reveal">
+          <div class="price-card__head">
+            <h3>Landing Pro</h3>
+            <p>Campañas, eventos o validación de oferta.</p>
+            <strong class="price">desde $299</strong>
+          </div>
+          <ul>
+            <li>Sección larga + FAQ</li>
+            <li>Copy de conversión</li>
+            <li>Analytics + SEO base</li>
+            <li>Entrega en 5–7 días</li>
+          </ul>
+          <a href="#contacto" class="btn btn--block btn--tilt">Solicitar</a>
+        </article>
+
+        <article class="price-card featured reveal" aria-label="Plan recomendado">
+          <div class="price-card__head">
+            <h3>Sitio Business</h3>
+            <p>Presencia sólida y escalable.</p>
+            <strong class="price">desde $690</strong>
+          </div>
+          <ul>
+            <li>Hasta 5 páginas</li>
+            <li>UI a medida</li>
+            <li>SEO técnico inicial</li>
+            <li>Soporte 30 días</li>
+          </ul>
+          <a href="#contacto" class="btn btn--block btn--neon">Cotizar</a>
+        </article>
+
+        <article class="price-card reveal">
+          <div class="price-card__head">
+            <h3>API & Dashboard</h3>
+            <p>Datos, endpoints y vistas ejecutivas.</p>
+            <strong class="price">a medida</strong>
+          </div>
+          <ul>
+            <li>Diseño de endpoints</li>
+            <li>Autenticación/roles</li>
+            <li>Observabilidad</li>
+            <li>KPIs y reportes</li>
+          </ul>
+          <a href="#contacto" class="btn btn--block btn--pulse">Agendar llamada</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section container">
+      <header class="section__head">
+        <h2 class="reveal">Proyectos</h2>
+        <p class="reveal">Resultados medibles, no promesas.</p>
+      </header>
+
+      <div class="grid portfolio">
+        <article class="work reveal">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop"
+               alt="Código y terminal durante desarrollo" width="800" height="600" loading="lazy" />
+          <div class="work__body">
+            <h3>API Ecommerce</h3>
+            <p>+42% velocidad de respuesta y trazabilidad completa.</p>
+            <a href="#contacto" class="btn btn--sm btn--ghost btn--tilt">Saber más</a>
+          </div>
+        </article>
+
+        <article class="work reveal">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+               alt="Panel de analítica con gráficas" width="800" height="600" loading="lazy" />
+          <div class="work__body">
+            <h3>Analytics Hub</h3>
+            <p>+38% en tasa de conversión con experimentación A/B.</p>
+            <a href="#contacto" class="btn btn--sm btn--ghost btn--neon">Ver caso</a>
+          </div>
+        </article>
+
+        <article class="work reveal">
+          <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200&auto=format&fit=crop"
+               alt="Diseño móvil con prototipos UI" width="800" height="600" loading="lazy" />
+          <div class="work__body">
+            <h3>UI Finance</h3>
+            <p>Sistema de diseño escalable para banca digital.</p>
+            <a href="#contacto" class="btn btn--sm btn--ghost btn--pulse">Detalles</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section container">
+      <header class="section__head">
+        <h2 class="reveal">Contacto</h2>
+        <p class="reveal">Contanos tu proyecto y respondemos en 24h.</p>
+      </header>
+
+      <form class="contact reveal" onsubmit="return handleContact(event)" aria-describedby="contact-help">
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Contanos brevemente tu idea" required></textarea>
+        </div>
+        <p id="contact-help" class="fine">También podés escribir a <a href="mailto:hola@d0ne.studio">hola@d0ne.studio</a> o WhatsApp <a href="https://wa.me/59170000000">+591 70000000</a>.</p>
+        <button class="btn btn--lg btn--neon" type="submit">Enviar</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <strong>D0NE Digital</strong>
+        <p class="fine">Bolivia · L-V 9:00–18:00</p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="#top" class="btn btn--sm btn--ghost btn--tilt">Arriba</a></li>
+        <li><a href="#servicios" class="btn btn--sm btn--ghost btn--tilt">Servicios</a></li>
+        <li><a href="#proyectos" class="btn btn--sm btn--ghost btn--tilt">Proyectos</a></li>
+        <li><a href="mailto:hola@d0ne.studio" class="btn btn--sm btn--ghost btn--neon">Contacto</a></li>
+      </ul>
+      <p class="fine">© <span id="year"></span> D0NE Digital — Software que impulsa resultados.</p>
+    </div>
+  </footer>
+
+  <!-- Barra flotante de acciones -->
+  <nav class="dock" aria-label="Acciones rápidas">
+    <a href="#nosotros" class="dock__btn" data-ripple>Nosotros</a>
+    <a href="#servicios" class="dock__btn" data-ripple>Servicios</a>
+    <a href="#proyectos" class="dock__btn" data-ripple>Proyectos</a>
+    <a href="#contacto" class="dock__btn dock__btn--primary" data-ripple>Contacto</a>
+  </nav>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
